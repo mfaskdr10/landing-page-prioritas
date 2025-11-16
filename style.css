@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 1000vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  background-color: antiquewhite;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 1px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.navbar .nav_logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.navbar .nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar .nav_menu a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar .nav_menu .nav_extra {
+  padding: 20px 30px;
+  background-color: #ffc477;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.curved-background {
+  background: #ffebcf;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 235, 207, 1) -10%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  width: 125%;
+  height: 600px;
+  position: absolute;
+  margin-top: 70vh;
+  border-radius: 200%;
+  transform: translateX(-10%);
+  border-top: 4px solid #ffad3a;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-top h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-top p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.hero-top img {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ways-of-working {
+  position: relative;
+  margin-top: 13rem;
+  /* display: flex;
+  justify-content: space-between; */
+  scroll-margin-top: 15rem;
+}
+
+.ways-of-working .timeline {
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 50vh;
+  border: 5px dashed black;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: none;
+}
+
+.ways-of-working h1 {
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.ways-of-working .list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px 30px;
+  background-color: antiquewhite;
+  width: fit-content;
+  border-radius: 100px;
+  position: relative;
+  box-shadow: 1px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.ways-of-working .list-item:nth-child(1) {
+  margin-bottom: 15rem;
+}
+
+.ways-of-working .list-item:nth-child(2) {
+  position: absolute;
+  top: 23rem;
+  right: 0;
+}
+
+.ways-of-working .list-item .header .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #444444;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #fcf6ee;
+}
+
+.ways-of-working .list-item .content .name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.ways-of-working .list-item .content .desc {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 1536px) {
+  .navbar {
+    padding: 1rem 1rem;
+    margin: 2.5rem auto;
+  }
+
+  .navbar .nav_logo {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar .nav_menu a {
+    font-size: 1rem;
+  }
+
+  .navbar .nav_menu .nav_extra {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .hero {
+    padding-top: 10rem;
+  }
+
+  .hero-top h1 {
+    font-size: 3rem;
+  }
+
+  .hero-top p {
+    font-size: 1rem;
+  }
+
+  .hero-bottom img {
+    width: 50%;
+  }
+
+  .ways-of-working {
+    scroll-margin-top: 10rem;
+  }
+
+  .ways-of-working h1 {
+    font-size: 3rem;
+  }
+
+  .ways-of-working .list-item {
+    padding: 1rem 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .ways-of-working .list-item .header .number {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
