@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  height: 1000vh;
+  /* height: 1000vh; */
   overflow-x: hidden;
 }
 
@@ -147,7 +147,7 @@ a {
 }
 
 .ways-of-working .list-item:nth-child(1) {
-  margin-bottom: 15rem;
+  margin-bottom: 11.5rem;
 }
 
 .ways-of-working .list-item:nth-child(2) {
@@ -360,6 +360,7 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   width: 100%;
+  margin-bottom: 3rem;
 
   .feature-item {
     background-color: #ffffff;
@@ -537,6 +538,10 @@ a {
     width: 4rem;
     height: 4rem;
   }
+
+  .ways-of-working .list-item:nth-child(1) {
+  margin-bottom: 17rem;
+}
 
   .ways-of-working .timeline {
     height: 56vh;
